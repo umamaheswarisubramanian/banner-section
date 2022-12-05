@@ -1,0 +1,443 @@
+*{	
+    margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+:root{
+	--primary-color: #00bcd4;
+	--secondry-color: #333333;
+	---white:#fff;
+}
+
+/*-------------common grid style------------*/
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	
+}
+.row{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left:-15px;/*sir comment-margin left and right -15px use pannanaum*/
+		margin-right:-15px;/*sir comment-margin left and right -15px use pannanaum*/
+		
+}
+.row>*{
+		width: 100%;
+		padding: 0 15px;
+}
+
+.col-lg-1{
+		width: 8.33%;
+		
+}
+.col-lg-2{
+	width: 16.66%;
+}
+.col-lg-3{
+		width: 25%;
+		
+}
+.col-lg-4{
+		width: 33.33%;
+		}
+.col-lg-5{
+		width: 41.66%;
+		
+}
+.col-lg-6{
+		width: 50%;
+		
+}
+.col-lg-7{
+		width: 58.33%;
+		
+}
+.col-lg-8{
+		width: 66.66%;
+		
+}
+.col-lg-9{
+		width: 75%;
+		
+}
+.col-lg-10{
+		width: 83.33%;
+		
+}
+.col-lg-11{
+		width: 91.66%;
+}
+.col-lg-12{
+		width: 100%;
+}
+.justify-content-start{
+	justify-content: flex-start !important;
+}
+.justify-content-between{
+	justify-content: space-between !important;
+}
+.justify-content-end{
+	justify-content: flex-end !important;
+}
+.justify-content-around{
+	justify-content: space-around !important;
+}
+.justify-content-evenly{
+	justify-content: space-evenly !important;
+}
+.align-items-start{
+		align-items: flex-start !important;
+}
+.align-items-end{
+		align-items: flex-end !important;
+}
+.align-items-center{
+		align-items: center !important;
+}
+.align-items-baseline{
+	align-items: baseline !important;
+}
+/*--------default comment-------*/
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	background-color:#00bcd4;
+	text-align: center;
+	padding: 10px 25px;
+	font-size: 16px;
+}
+.text-left{
+			text-align: left !important;
+}
+.text-right{
+			text-align: right !important;
+}
+.text-center{
+			text-align: center !important;
+}
+.text-justify{
+			text-align: justify !important;
+}
+/*================Header style=================*/
+.head-top{
+	background-color: #fff;
+}
+.head-info{
+	background-color: #39312f;
+	}
+.contact-info span{/*--contact info la erukkara all place kum white changevaruthu--*/
+	color: #fff;
+	font-size: 16px;
+	margin-right:10px;
+	display: inline-block;
+	padding: 10px 0px;
+}
+.contact-info span > a{
+	color:#fff;
+	font-size: 16px;
+	text-decoration: none;	
+}
+.contact-info span > a:hover{
+	color:#00bcd4;
+}
+.contact-info span > i{
+	color:#00bcd4;
+	font-size: 16px;
+}
+.info-btn{
+	height: 100%;
+	font-size: 18px;
+}
+/*==============header style-=========*/
+/*==============Navigation section start-=========*/
+.Navigation{
+	padding:4px 0px;
+}
+h1.logo > a{
+	display: inline-block;
+	color:#000;
+	font-size: 30px;
+	text-decoration: none;
+	font-weight: 800px;
+	height: 40px;
+	padding: 0px 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.menubar{
+	display: flex;
+	justify-content: flex-end;	
+}
+.menubar .nav-link a{
+	display: block;
+	color:#000;
+	font-size: 15px;
+	padding: 10px 10px;
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+}
+.nav-link a:hover{
+	color:#00bcd4;
+}
+.menubar .nav-link a.active{
+	color:#00bcd4;
+}
+/*==============Navigation section end-=========*/
+/*==============banner section start-=========*/
+.banner{
+	background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.45)), url("Images/hero-bg.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding:140px 50px;
+	}
+.banner-content{
+	width:60%;
+}
+.banner-content h1{
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 45px;
+	margin-bottom: 10px;
+	font-weight:700;
+}
+.banner-content p{
+	font-size:18px;
+	color: #fff;
+	margin-bottom: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+.bnr-btn{
+	position: relative;
+	display: inlane-block;
+	padding: 6px 6px 25px;
+}
+.bnr-btn a.btn{
+	border-radius: 25px;
+	padding-left: 55px;
+	background-color: #000;
+	transition: all 0.3s ease;
+	
+}
+.bnr-btn a.btn:hover{
+	background-color: #00bcd4;
+}
+.bnr-btn > i{
+	position: absolute;
+	top: -13px;
+	left: 0;
+	background-color: var(--primary-color);
+	border-radius: 50%;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	color:#fff;
+	border-radius: 50%;
+	box-shadow: 1px 0px 11px -2px #000;
+}
+
+/*==============banner section end-=========*/
+/*===============whychoosesection=========*/
+.relative{
+		position: relative;
+		top:-80px;
+}
+.whychoose{
+	background-color: #00bcd4;
+	height: 300px;
+}
+.choose-1{
+	background-color: #00bcd4;
+	height: 220px;
+}
+/*=========why choose section end=======*/
+/*=========About section start=======*/
+.abt-section{
+	background-color: #00bcd4;
+	padding:25px 0px;
+}
+.abt{
+	background-color: #39312f;
+	height: 400px;
+}
+.Enim{
+	background-color: #39312f;
+	height: 400px;
+}
+/*=========About section end=======*/
+/*================Overflow section start=================*/
+.Overflow{
+		background-color: #39312f;
+		padding: 50px 0px;
+}
+.over-1{
+		height: 100px;
+		background-color: #00bcd4;
+}
+/*================Overflow section end=================*/
+./*================Service section start=============*/
+.Service{
+		background-color: #9a6700;	
+}
+.service-1{
+		padding:25px 0px;	
+}
+.sectiontitle{
+		margin-bottom:25px;
+		height:40px;
+		background-color: #00bcd4;
+}
+.services-1{
+		margin:25px 15px;	
+}
+.Ser-1{
+		height: 200px;
+		background-color: #00bcd4;
+}
+/*================Service section End=============/
+/*================Self section start=============*/
+.Self{
+	background-color: #39312f;
+	padding:30px 0px;
+}
+.self-1{
+		margin-bottom:30px;
+		height: 350px;
+		background-color: #00bcd4;
+	
+		
+}
+.self-2{
+		height: 200px;
+		background-color: white;
+		border-radius: 5%;
+		margin-bottom:80px;
+}
+
+/*================Self section start=============/
+/*======Transition section start============*/
+.Transition{
+		background-color: white;
+		padding: 100px 0px;
+}
+.Trans-1{
+		height: 100px;
+		background-color: #00bcd4;
+}
+/*======Transition section end============*/
+/*======portfolio section start============*/
+.portfolio{
+		background-color: #39312f;
+		padding: 50px 0px;
+}
+.port1{
+		height: 60px;
+		background-color: #00bcd4;
+}
+.port2{
+		margin-top: 50px;
+		margin-left: 10px;
+		height: 300px;
+		background-color: #00bcd4;
+}
+
+/*======portfolio section end==============*/
+/*======team section start============*/
+.team{
+		background-color: #00bcd4;
+		padding: 50px 0px;
+}
+.team-1{
+		height: 60px;
+		background-color: #39312f;
+		margin-bottom: 25px;
+}
+.team-2{
+		height: 300px;
+		background-color: #39312f;
+}
+
+/*======team section end==============*/
+/*======Pricing section start==============*/
+.Pricing{
+		background-color: #39312f;
+		padding: 50px 0px;
+}
+.Pricingtitle{
+		height: 60px;
+		background-color: #00bcd4;
+		margin-bottom: 25px;
+}
+
+.Price-1{
+		height: 180px;
+		background-color: #00bcd4;
+}
+/*======Pricing section end==============*/
+/*======faq section start=============*/
+.faq{
+		background-color: #00bcd4;
+		padding: 50px 0px;
+}
+.faqtitle{
+		height: 50px;
+		background-color: white;
+		margin-bottom: 25px;
+}
+
+.faq-1{	margin-left: 15px;
+		margin-bottom: 25px;
+		height: 90px;
+		background-color: white;
+}
+/*======faq section end=============*/
+/*=======contact section start====*/
+.contact{
+		background-color: #39312f;
+		padding: 50px 0px;
+}
+.contacttitle{
+		height: 50px;
+		background-color: white;
+		margin-bottom: 25px;
+}
+.contact-1{
+		margin-top: 30px;
+		margin-left: 10px;
+		height: 180px;
+		background-color: white;
+}
+.contact-2{
+		margin-left: 10px;
+		margin-top: 50px;
+		height: 490px;
+		background-color: white;
+}
+
+/*=======contact section end====*/
+/*=======flexor section start====*/
+.flexor{
+		height:230px;
+		background-color: #00bcd4;
+}
+.flexor-1{
+		margin: 25px 0px 25px;
+		height: 150px;
+		background-color: white;
+}
+/*=======flexor section end====*/
+/*===========copywright ============*/
+.Copywrite{
+		height:160px;
+		background-color: #39312f;
+}
+.copy-1{
+		margin-top: 50px;
+		margin-left: 50px;
+		margin-right: 50px;
+		height: 50px;
+		background-color: #00bcd4;
+}
+/*===========copywright ============*/
